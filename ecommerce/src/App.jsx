@@ -21,7 +21,7 @@ function App() {
   }, [theme]);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/EcommerceApp">
       <Navbar
         search={search}
         setSearch={setSearch}
