@@ -1,0 +1,46 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+  padding: 25px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.card h4 {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rating {
+  color: #f0c14b;
+}
+
+.card button {
+  margin-top: auto;
+  padding: 8px;
+  background: #ffd814;
+  border: 1px solid #fcd200;
+  cursor: pointer;
+}

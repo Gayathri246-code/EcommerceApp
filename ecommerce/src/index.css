@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* LIGHT MODE */
+body.light {
+  background-color: #eaeded;
+  color: #000;
+}
+
+/* DARK MODE */
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #131921;
+}
+
+body.dark .navbar {
+  background-color: #000;
+}
+
+/* CARDS */
+.card,
+.cart-item,
+.cart-summary {
+  background-color: white;
+  color: black;
+}
+
+body.dark .card,
+body.dark .cart-item,
+body.dark .cart-summary {
+  background-color: #1e1e1e;
+  color: white;
+}

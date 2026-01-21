@@ -1,0 +1,41 @@
+.amazon-category-bar {
+  display: flex;
+  gap: 20px;
+  padding: 12px 25px;
+  background-color: #232f3e;
+  color: white;
+  font-size: 14px;
+  overflow-x: auto;
+  white-space: nowrap;
+  /* position: sticky; */
+  top: 65px;
+  /* z-index: 100; */
+}
+
+.amazon-category-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.amazon-category-item {
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 3px;
+  transition: 0.2s ease;
+}
+
+.amazon-category-item:hover {
+  background-color: #37475a;
+}
+
+.amazon-category-item.active {
+  border: 1px solid white;
+}
+
+/* DARK MODE SUPPORT */
+body.dark .amazon-category-bar {
+  background-color: #000;
+}
+
+body.dark .amazon-category-item:hover {
+  background-color: #222;
+}
