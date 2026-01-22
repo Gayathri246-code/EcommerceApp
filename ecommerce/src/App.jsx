@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ProductDetails from "./pages/productdetails";
 import Home from "./pages/home";
@@ -21,7 +21,7 @@ function App() {
   }, [theme]);
 
   return (
-    <BrowserRouter basename="/EcommerceApp">
+    <HashRouter>
       <Navbar
         search={search}
         setSearch={setSearch}
@@ -36,7 +36,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
       </Routes>
       <Footer/>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
