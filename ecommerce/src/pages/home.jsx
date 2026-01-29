@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Spinner from "../components/Spinner";
+import Spinner from "../components/spinner";
 import ProductCard from "../components/cards";
 import "../styles/category.css";
 
