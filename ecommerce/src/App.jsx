@@ -5,7 +5,8 @@ import Cart from "./pages/cart";
 import { useEffect, useState } from "react";
 import Corousel from "./components/corousel";
 import Footer from "./components/footer";
-import Navbarnew from "./components/Navbar";
+import Navbarnew from "./components/navbar";
+// import Navbarnew from "../components/navbar";
 
 
 
