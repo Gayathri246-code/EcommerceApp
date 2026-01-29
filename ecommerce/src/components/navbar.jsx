@@ -3,7 +3,7 @@ import "./../styles/navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-function Navbar({ search, setSearch, theme, setTheme }) {
+function Navbarnew({ search, setSearch, theme, setTheme }) {
   const cartItems = useSelector(state => state.cart.items);
 
   return (
@@ -49,4 +49,4 @@ const toggleBtn = {
   color: "white"
 };
 
-export default Navbar;
+export default Navbarnew;

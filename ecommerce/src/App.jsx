@@ -1,11 +1,12 @@
 import {Routes, Route, HashRouter } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import ProductDetails from "./pages/productdetails";
 import Home from "./pages/home";
 import Cart from "./pages/cart";
 import { useEffect, useState } from "react";
 import Corousel from "./components/corousel";
 import Footer from "./components/footer";
+import Navbarnew from "./components/Navbar";
+
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <HashRouter>
-      <Navbar
+      <Navbarnew
         search={search}
         setSearch={setSearch}
         theme={theme}
